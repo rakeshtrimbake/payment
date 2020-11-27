@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+        }
+        .avv{
+          display: flex;
+        }
+        body{
+            padding: 0px 40px;
+            font-size: 20px;
+            padding-top: -50px !important;
+            font-family: 'Roboto', sans-serif;
+            color:rgb(93, 95, 95);
+           
+            
+        }
+      table {
+        width: 100%;
+        table-layout:fixed;
+        padding-bottom: 25px;
+      }
+      td > span {
+          font-size:1.8rem
+          
+      }
+      td {
+        word-wrap:break-word;
+        padding: 10px 2px;
+        
+      }
+      td > b {
+        color: rgb(46, 48, 48) !important;
+      }
+      td > h3 {
+        color: white !important;
+        padding-left: 35px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border-radius: 20px !important;
+        border-collapse: separate;
+      }
+     hr{
+         border: 1px solid  rgb(138, 134, 134);
+     }
+      tr{
+          padding: 14px;
+      }
+      p {
+        font-family: sans-serif;
+        font-size: 30px !important;
+        padding-bottom: 8px;
+        font-weight: 800;
+        border-bottom: 2px solid rgb(138, 134, 134);
+        color: rgb(108, 112, 112) !important;
+      }
+      td > p{
+          color: rgb(14, 168, 84) !important;
+          padding-bottom: 0px !important;
+      }
+      td > strong {
+          font-size: 30px;
+          font-family: sans-serif;
+          color:rgb(108, 112, 112) !important;
+      }
+
+      table > tr > td > img {
+        height: 200px;
+        width: auto;
+      }
+      #cssTable td 
+{
+    text-align: center; 
+    vertical-align: middle;
+}
+    
+    </style>
+  </head>
+  <body>
+    <div class="header">
+        <table>
+          <tr>
+            <td width="60%">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA7wDvAO/BzIMFAAAAB3RJTUUH5AoNCxQ7aivi2AAADEpJREFUeNrtm1lzG9eVgM+93Y2FAEmAC7iCAhdJ3MRFoilLsqVIlu04iu3E5dgpl5PKUpOaSqVSyUvmH8zTVE3NTGVqHjKueZixJuUkzuolsuWNsizKkkiRokiKBCFCXLAvxNbbPXloktpImG2RoKT0Bz6QRPftvh+6T5977gVBRDDYGHS7T+BBwpClA0OWDgxZOjBk6cCQpQNDlg4MWTowZOnAkKUDQ5YODFk6MGTpwJClA0OWDgxZOjBk6cCQpQNDlg4MWTowZOnAkKUDQ5YODFk64Lf7BJZBRCkrZ5NiLiXKogoAgpmz2M3WErPJKhBCtvsEAbZdFjJMhtNzVwP+sUD4eiwVy0pZmakIAJQjJqtgLyuqaHC4O6rr21zFFbbttUa2a/oeESP+xOgHU1PnZ5PBtKqohBBYeQEA4MoLkeO50ip7yyPu9iPNFQ2O7VK2PbKyS+LlU5PDf51MhlJAYLXziJodWDZ261sMAaC4wtb91K7up3Zbi81/F7KCM9GP/+/i9eF5RNRcaCIEM28ttRSVWAQLDwhSTs4mxUwyp4gKABBKNJuEEE937eOv7nV5yh5yWbMjC+/96lzkRoLSZU2UpxUNjsbeOnd7tbO2xGIzcQJFBFVhYkqMzif9VxZnLs1H/HGmMk0ZY1jhdjzxw/6GPTUPrazZ0cV3//PTRGCJrJgqdzt6n2nd9eiOolJLnh3T8ezkZ9eH3pmI+OOr+zqqi5/+8UF3R/VDKCs8G/vzv34cno0TSgCBcKT1UOOBb3U5a0o22EJsYensG8PjZ2ZQRSCADCt2OL/+s8MVDY7CdKFASamYkQZODoVWTHEC7X++8/iP9m/cFAA4a4qP/2h///OdVKCAQCgJXY8NnLwkZqSHStaVD6e9F29ocYpQsvdE26Mvdpksgt52TBbh0Re79p1o025GSon34o2xj7wPj6xEMDX87gRTGAAgw5Z+9/5v7uFN3JdrjTdx+1/Y0/KIW3uGMoUNvTuRDKUK0JHbMnjGMOSLimlpE7M+QsnUeX90PkkoQcRSl/3Ai91mm+le2jQXmR59sWtxOpwMpwkl0bnEpbcnmvvqNX2bAiKabaZKT5l2N6whi1KyMBn+5PWLTGGweUmyqrDV3zuOtlR6nPfepquxrP0rzZ/95rL254W/jA29O75pZ4xAefr4K3urmspv/fedY8POo82h69HhU5ObPqRAxJIKW+tBz2Y12Hqw8crpqaVohhCCDBVJ3cRT7T6yq/No8x3/v1MWb+YPvtQTD6R8l+bg3n0RoGR5rIcM6tqqHLXrPv6knLwUTgMCACCAySLYy4oot+45lNWV1La6xgd8RIt+CAwR7v1GRPT01h18qYc33yXn7o1tTuuR7+4TLLyUkW+9GcnKmEPPcSE4E8ktSUCAcqS+rYqu38LitfDb/zGgyCoiAILJKnQea+n/RgdvWrs0Qjnqbq+aPHtdM2UpNrsay/R+vshuzzMRzEXCgZe6bU7r3RuvfR4uT9mzPz98R7rKGAv5YmJGIhuMZwRkUTlz8lI2KRJCBDNfXl+aZ3NVYZlErmZ3pctTBgiBmcjgmyMuj7Olv2G9XcrdDt7MK6KCiDantefp3byJ2+DFhYDmIlOlx0npbSkBIcAJaz+p161nrbUDF/RFB16/xFQGG0aVmfYcFCx8/jGNxu4Dnt5nWgFg6rz/j//yYXQukWfjolKrycLLOZlQEr2ReOvfP9n4iVGOPvZKb12ra+O76Cv+dR5tCflil9/7MuGfE7j1PrGbEHLlw+mFyRACRPxxi81UuztfZ3jTzTYRdcR4ROw6vqvzaIuuLuiTJZj5Qy/3JIJLvkvzGwr/twV4/OJxKIH4YjIdzwJCLi3aHFZrSb6LERFv5lYbD/CInt66Qy/3CGZ93dddVrY5rUe+2ydYhjcQ/gljLOCNSGmZAFEkRcrIX9iNvuc6uo7vQsSp8/73f3XONzSXJ9JJGVmRFAIEEMw2wdVUTimF24XpCuGbLAvyh/9bs38CiqSe+fVQOBUjlEhZZSmSdjXmr9iR+OKSf2wREILeCCLmHz8mw2kpq2gViOJyW+8zrbxwM8CvZOE6Qvjmy4J1wn/IF/vk9Yt3hH9VWa7YqbIa8Eaa+9z5VBEY+2haGxgTCi197qa++jzbB2ciqqwSSgglkbnEW/92W4CnHH38lb26QviWyFqT/Nk/AvhHA9Kzssm69sVS6XF+9SeHcEW1xW6q2Vlhsa9ba5eysn80gLAyv3F7Eo+I3U+ukYXfL7LWy/4JBUIIJSTgjcxPhDw9tWvubncWtR5q3Pjh5idCgZkIJcu1ebz1gl4/C79fZMFa2T8BiAdSiWCKEBCz8uX3rtW3V33p+swqiqSOvH9NzMiUEkRwVBWXuuzLweoeQnh+tqSsrGpDFgAAoJRMnfdr4xgA4AXuyX880H646R4PMfax99R/nV1u08R97aePN++rZytpxJcO4fnZkuIfJ3C8afmH8rSxt66hq0abZ5ZF5ewbwwFv9F7aD3gjZ98YlkUFAJiKO7pqPd21lKerB90KU1sl6w4EC9/3bIfNYUFEQklsPnn6tXP5xzF5iM4nTv/3YGylmmh3Wh95rkOwFGIdQoFq8PXtrr0n2rV8h1AydzX4zi/PLEyF9bazOBV+55efzo0Hl2vwHO17rmMTk4P8FG4qTMrKp18bHP1ganUWutRl739hT9tjjeslE7ciZuTxAe/g70cTgdTq7PSeJ3Ye+35/YS6rgsoCgEwid/q1wfEzPi2v0FZ8uNurOo62NHRWFzksdydoiJiJ52ZHF0ZPT924GlAVRggBBARoPeQ59oP+jVQyHkhZAJBJ5gZOXrrywdRytwEYQ17gHNXFNTsrXJ6ykkqbqcgECFJWToZSQV90cSocW1hSZJWuXFAcz3Uea3ns2z35h9kPvCwAkEVl5P1r5/9wJRlOE7J8MWk1CUIJx1PKUQBgKlMVhgwJISv33XIh/5HnO/Y8sVNvzeCBlAUr5eaLb417P/dnlsQvLFgjQ0Swlphb+ty9X2t1NZZvywqtbVvMBgCqwgLTkYlPfddHFhKBJVlUVopTK6vZAAghvJkvddl37KnZfchT3VLB8du2DnY7ZWkgYiaRC/vjIV80Np9Mx7Mra0r5olKLo7rY5Smr3OFcM/z/3cm6A6YybdRCKdGC1/3DfSfrfub++ujucwxZOtj+Lw0okspUln/Ew1RGKb17bjebzBFKAQAZWku2fP1yIWRNDc5Onr0OBAQz33a4qb6t6tZ3J8/6wrPxw6/uW3OeOxlKD5+ajPhjpVXF+060lVTaV99CxM9+O6KtXhLT0le+17fVj8tCyFqcjsSDqfbDTRF//MzJoad/fDCbzFU1lyeCKUDILonJcFqR1YA3UlxuS8cyZXWlTGWJYKrUZT/92iDlSNM+d3QuIYsKU9nsyGIqlqlpqbCWWqqbywWLAABSTi5AYlEIWYSS1Z5wAo3OJQb/MPqNfzp29ZMZKSuXVNgIJVc/9k5fuHHo5e6P/vfCke/0iWnpwl/GOo+2ZBLZ539x1OawyjmF8vTyqWuX35u0Oaznfjuy/4U9kRtxs80MANlk7t6rr/eHLIBsMheYjiSCKZOVpxxhCgMEZKgtbQ9MR+auBg+/ure4wqbKDBARkamoiConcNoY8NybI6Uu+/Tn/r0n2lofa/zdP78v5WRVYdrM263r5baOQjwNGcOy+tKuJ3ft3N+QjmWBEFlU/VcWg76oNiGaimZsTqtveF6rQMxNhObGg4qoVLeUqwr7/E9jAW9kbjyYXRLNNlPIF1uYCKWimZsHQO0rLFtOIa4se1mR98KND/7nPCHQ9eSu+vaqnfsbPvvNZZvDWulxcgLXfqSp5+nWM78eSobSPV/d/fmfxngTV99RVeKyH3517+Cbo94LfrPN7O6ocrdXDfz/0PxEsGZnZUmlPeCN2hxWs81UmFy/EBm8LCqKqCAA5ai5SCCEMJVlk6LJKnA8ZQyZykwWQcxInEA5gc8u5ShHBTNPOUoIyKKSS4nmIpOWXogZSZWZmJHO/W4kOBM9/g/7q5rKmYoFqJc+qMOdpXD66sBMXaurdndlwQbYD6qsbcEY7ujAkKUDQ5YODFk6MGTpwJClA0OWDgxZOjBk6cCQpQNDlg4MWTowZOnAkKUDQ5YODFk6MGTpwJClA0OWDgxZOjBk6cCQpQNDlg4MWTr4G7Sgw1cxXKIvAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIwLTEwLTEzVDExOjIwOjU5LTA0OjAwWyOcygAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMC0xMC0xM1QxMToyMDo1OS0wNDowMCp+JHYAAAAASUVORK5CYII="
+                alt=""
+              />
+            </td>
+            <td align="right" width="40%">Report from <%=reports.report_period%></td>
+          </tr>
+        </table>
+        <table style="padding-bottom: 0px !important;">
+            <tr>
+                <td width="55%" style="font-weight: 800;">
+                  <span>Payments and Salary</span> 
+                    
+                </td>
+                <td width="45%" style="font-weight: 800;"
+                   style="margin-left:50px;"><span>Total Due:</span><span style="color: green;"> Rp <%=due.toLocaleString(
+                    undefined,
+                    { minimumFractionDigits: 0 }
+                  ).replace(/,/g, '.')%></span>
+                </td>
+            </tr> 
+        </table>
+        <hr>
+        <table style="margin-top: 3%;">
+            <tr bgcolor="#ccffff">
+                <td width="20%"><b>EMPLOYEE NAME</b></td>
+                <td width="20%"><b>SALARY EARNED</b></td>
+                <td width="25%"><b>PREVIOUS BALANCE</b></td>
+                <td width="20%"><b>PAYMENTS MADE</b></td>
+                <td width="15%"><b>TOTAL DUE</b></td>
+            </tr>
+            <% reports.reports.forEach((report,index) => {%>
+            
+                <tr class="header__monthly">
+                  <td><%=report.information.employee_name%></td>
+                  <td style="color: green;">Rp <%=report.salary.net_salary.toLocaleString(
+                    undefined,
+                    { minimumFractionDigits: 0 }
+                  ).replace(/,/g, '.')%></td>
+                  <td style="color: green;">Rp <%=report.salary.previous_balance.toLocaleString(
+                    undefined,
+                    { minimumFractionDigits: 0 }
+                  ).replace(/,/g, '.')%></td>
+                  <td style="color: red;">Rp <%=report.salary.payments.toLocaleString(
+                    undefined,
+                    { minimumFractionDigits: 0 }
+                  ).replace(/,/g, '.')%></td>
+                  <td style="color: green;">Rp <%=report.salary.total_payable.toLocaleString(
+                    undefined,
+                    { minimumFractionDigits: 0 }
+                  ).replace(/,/g, '.')%></td>
+                </tr>
+                
+              <% });%>
+        </table>
+      </div>
+  </body>
+</html>
