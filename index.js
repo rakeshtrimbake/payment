@@ -112,9 +112,6 @@ const reports = {
 const totalDue = reports.reports.reduce((cur,next) => {
     return cur.salary.total_payable +next.salary.total_payable;
 })
-app.get('/', function(req, res){ 
-    res.render('payment.ejs',{reports,moment:moment,due:totalDue}) 
-  });
 
 app.get("/generatePayment", (req, res) => {
    
